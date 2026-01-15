@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<!-- NEED HELP? JOIN FOR SUPPORT: https://discord.gg/heu5cEjnHA -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Los Santos Roleplay - GTA V RP Server</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo-link">LSRP</a>
+            </div>
+            <div class="nav-center">
+                <a href="index.html">HOME</a>
+                <a href="index.html#server">SERVER</a>
+                <a href="jobs.html" class="nav-link-external">JOBS <span class="external-icon">↗</span></a>
+                <a href="staff.html" class="nav-link-external">STAFF <span class="external-icon">↗</span></a>
+                <a href="index.html#join">JOIN</a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-ip-display">
+                    <span class="nav-ip-text">play.lsrp.com</span>
+                    <button class="nav-copy-btn" id="navCopyBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <div class="logo">LSRP</div>
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="mobile-menu-nav">
+                <a href="index.html" class="mobile-menu-link">HOME</a>
+                <a href="index.html#server" class="mobile-menu-link">SERVER</a>
+                <a href="jobs.html" class="mobile-menu-link">JOBS <span class="external-icon">↗</span></a>
+                <a href="staff.html" class="mobile-menu-link">STAFF <span class="external-icon">↗</span></a>
+                <a href="index.html#join" class="mobile-menu-link">JOIN</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Ticker/Marquee -->
+    <div class="ticker-wrapper">
+        <div class="ticker-content">
+            <span class="ticker-text"></span>
+            <span class="ticker-text"></span>
+            <span class="ticker-text"></span>
+        </div>
+    </div>
+
+
+    <!-- Jobs Hero -->
+    <section class="jobs-hero">
+        <div class="jobs-hero-content">
+            <div class="jobs-label">CAREER OPPORTUNITIES</div>
+            <h1 class="jobs-title">AVAILABLE JOBS</h1>
+            <p class="jobs-description">
+                Choose your path in Los Santos. From legal businesses to underground operations,
+                your career awaits. Each job offers unique opportunities and challenges.
+            </p>
+        </div>
+    </section>
+
+    <!-- Legal Jobs Category -->
+    <section class="jobs-category">
+        <div class="section-container">
+            <div class="category-header">
+                <div class="category-badge">LEGAL</div>
+                <h2 class="category-title">LEGAL CAREERS</h2>
+                <p class="category-description">Honest work for honest pay. Build your reputation in the city.</p>
+            </div>
+
+            <div class="jobs-grid">
+                <!-- Police Officer -->
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=POLICE" alt="Police"
+                            class="job-image">
+                    </div>
+                    <div class="job-content-wrapper">
+                        <h3 class="job-title">POLICE OFFICER</h3>
+                        <div class="job-salary">$2,500 - $5,000/hr</div>
+                        <p class="job-description">
+                            Protect and serve the citizens of Los Santos. Patrol the streets, respond to emergencies,
+                            and maintain law and order.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-tags">
+                                <span class="job-tag">Level 10+</span>
+                                <span class="job-tag">Clean Record</span>
+                                <span class="job-tag">Medium Diff</span>
+                                <span class="job-tag">15-30 Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paramedic -->
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=EMS" alt="Paramedic"
+                            class="job-image">
+                    </div>
+                    <div class="job-content-wrapper">
+                        <h3 class="job-title">PARAMEDIC</h3>
+                        <div class="job-salary">$2,000 - $4,500/hr</div>
+                        <p class="job-description">
+                            Save lives across the city. Respond to medical emergencies and provide critical care
+                            to injured citizens.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-tags">
+                                <span class="job-tag">Level 5+</span>
+                                <span class="job-tag">Medical Training</span>
+                                <span class="job-tag">Medium Diff</span>
+                                <span class="job-tag">10-20 Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Taxi Driver -->
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=TAXI" alt="Taxi" class="job-image">
+                    </div>
+                    <div class="job-content-wrapper">
+                        <h3 class="job-title">TAXI DRIVER</h3>
+                        <div class="job-salary">$1,500 - $3,000/hr</div>
+                        <p class="job-description">
+                            Transport passengers around Los Santos. Meet new people and earn tips while exploring
+                            the city.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-tags">
+                                <span class="job-tag">Level 1+</span>
+                                <span class="job-tag">Driver's License</span>
+                                <span class="job-tag">Easy Diff</span>
+                                <span class="job-tag">5-15 Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mechanic -->
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=MECH" alt="Mechanic"
+                            class="job-image">
+                    </div>
+                    <div class="job-content-wrapper">
+                        <h3 class="job-title">MECHANIC</h3>
+                        <div class="job-salary">$1,800 - $4,000/hr</div>
+                        <p class="job-description">
+                            Repair and customize vehicles. Run your own garage or work for established shops.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-tags">
+                                <span class="job-tag">Level 3+</span>
+                                <span class="job-tag">Mech Skills</span>
+                                <span class="job-tag">Easy Diff</span>
+                                <span class="job-tag">8-18 Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Illegal Jobs Category -->
+    <section class="jobs-category dark">
+        <div class="section-container">
+            <div class="category-header">
+                <div class="category-badge danger">ILLEGAL</div>
+                <h2 class="category-title">UNDERGROUND</h2>
+                <p class="category-description">High risk, high reward. The criminal underworld awaits.</p>
+            </div>
+
+            <div class="jobs-grid">
+                <!-- Drug Dealer -->
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="https://placehold.co/600x400/ffffff/000000?text=DRUGS" alt="Drug Dealer"
+                            class="job-image">
+                    </div>
+                    <div class="job-content-wrapper">
+                        <h3 class="job-title">DRUG DEALER</h3>
+                        <div class="job-salary">$3,000 - $8,000/hr</div>
+                        <p class="job-description">
+                            Distribute illegal substances across the city. Avoid law enforcement and rival gangs.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-tags">
+                                <span class="job-tag">Level 15+</span>
+                                <span class="job-tag">Gang Affiliation</span>
+                                <span class="job-tag">Hard Diff</span>
+                                <span class="job-tag">High Risk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arms Dealer -->
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="https://placehold.co/600x400/ffffff/000000?text=ARMS" alt="Arms Dealer"
+                            class="job-image">
+                    </div>
+                    <div class="job-content-wrapper">
+                        <h3 class="job-title">ARMS DEALER</h3>
+                        <div class="job-salary">$4,000 - $10,000/hr</div>
+                        <p class="job-description">
+                            Supply weapons to the criminal underworld. Manage inventory and negotiate deals.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-tags">
+                                <span class="job-tag">Level 20+</span>
+                                <span class="job-tag">Connections</span>
+                                <span class="job-tag">Very Hard</span>
+                                <span class="job-tag">Extreme Risk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hacker -->
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="https://placehold.co/600x400/ffffff/000000?text=HACKER" alt="Hacker"
+                            class="job-image">
+                    </div>
+                    <div class="job-content-wrapper">
+                        <h3 class="job-title">HACKER</h3>
+                        <div class="job-salary">$2,500 - $7,000/hr</div>
+                        <p class="job-description">
+                            Breach security systems, steal data, and disable alarms. Your skills are in high demand.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-tags">
+                                <span class="job-tag">Level 12+</span>
+                                <span class="job-tag">Tech Skills</span>
+                                <span class="job-tag">Hard Diff</span>
+                                <span class="job-tag">High Risk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hitman -->
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="https://placehold.co/600x400/ffffff/000000?text=HITMAN" alt="Hitman"
+                            class="job-image">
+                    </div>
+                    <div class="job-content-wrapper">
+                        <h3 class="job-title">HITMAN</h3>
+                        <div class="job-salary">$5,000 - $15,000/contract</div>
+                        <p class="job-description">
+                            Execute contracts with precision. Eliminate targets and disappear without a trace.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-tags">
+                                <span class="job-tag">Level 25+</span>
+                                <span class="job-tag">Reputation</span>
+                                <span class="job-tag">Extreme Diff</span>
+                                <span class="job-tag">Extreme Risk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Category -->
+    <section class="jobs-category">
+        <div class="section-container">
+            <div class="category-header">
+                <div class="category-badge">SERVICES</div>
+                <h2 class="category-title">SERVICE INDUSTRY</h2>
+                <p class="category-description">Support the city's economy with essential services.</p>
+            </div>
+
+            <div class="jobs-grid">
+                <!-- Delivery Driver -->
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=DELIVERY" alt="Delivery"
+                            class="job-image">
+                    </div>
+                    <div class="job-content-wrapper">
+                        <h3 class="job-title">DELIVERY DRIVER</h3>
+                        <div class="job-salary">$1,200 - $2,500/hr</div>
+                        <p class="job-description">
+                            Transport goods across the city. Fast deliveries mean better tips and higher earnings.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-tags">
+                                <span class="job-tag">Level 1+</span>
+                                <span class="job-tag">Vehicle</span>
+                                <span class="job-tag">Easy Diff</span>
+                                <span class="job-tag">10-25 Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Real Estate Agent -->
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=ESTATE" alt="Real Estate"
+                            class="job-image">
+                    </div>
+                    <div class="job-content-wrapper">
+                        <h3 class="job-title">REAL ESTATE AGENT</h3>
+                        <div class="job-salary">$2,000 - $6,000/sale</div>
+                        <p class="job-description">
+                            Help players find their dream properties. Earn commission on every successful sale.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-tags">
+                                <span class="job-tag">Level 8+</span>
+                                <span class="job-tag">License</span>
+                                <span class="job-tag">Medium Diff</span>
+                                <span class="job-tag">5-12 Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lawyer -->
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=LAWYER" alt="Lawyer"
+                            class="job-image">
+                    </div>
+                    <div class="job-content-wrapper">
+                        <h3 class="job-title">LAWYER</h3>
+                        <div class="job-salary">$3,000 - $8,000/case</div>
+                        <p class="job-description">
+                            Defend clients in court. Your legal expertise can mean freedom or prison time.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-tags">
+                                <span class="job-tag">Level 18+</span>
+                                <span class="job-tag">Law Degree</span>
+                                <span class="job-tag">Hard Diff</span>
+                                <span class="job-tag">3-8 Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Reporter -->
+                <div class="job-card">
+                    <div class="job-image-container">
+                        <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=NEWS" alt="News" class="job-image">
+                    </div>
+                    <div class="job-content-wrapper">
+                        <h3 class="job-title">NEWS REPORTER</h3>
+                        <div class="job-salary">$1,800 - $4,000/hr</div>
+                        <p class="job-description">
+                            Cover breaking news and events. Interview citizens and broadcast live from the scene.
+                        </p>
+                        <div class="job-details">
+                            <div class="job-tags">
+                                <span class="job-tag">Level 5+</span>
+                                <span class="job-tag">Comm Skills</span>
+                                <span class="job-tag">Medium Diff</span>
+                                <span class="job-tag">4-10 Active</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="jobs-cta">
+        <div class="jobs-cta-content">
+            <h2 class="cta-title">READY TO START YOUR CAREER?</h2>
+            <p class="cta-description">Join Los Santos Roleplay today and begin your journey</p>
+            <a href="index.html#join" class="btn-primary">JOIN NOW</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">LOS SANTOS RP</div>
+                <p class="footer-text">The ultimate GTA V roleplay experience</p>
+            </div>
+            <div class="footer-center">
+                <a href="#">Discord</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2025 Los Santos Roleplay</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Check if jobs page is enabled
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof CONFIG !== 'undefined' && CONFIG.jobs && CONFIG.jobs.enabled === false) {
+                // Redirect to home if jobs page is disabled
+                window.location.href = 'index.html';
+                return;
+            }
+        });
+    </script>
+</body>
+
+</html>

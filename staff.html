@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- NEED HELP? JOIN FOR SUPPORT: https://discord.gg/heu5cEjnHA -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Server Management - Los Santos Roleplay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="logo-link">LSRP</a>
+            </div>
+            <div class="nav-center">
+                <a href="index.html">HOME</a>
+                <a href="index.html#server">SERVER</a>
+                <a href="jobs.html" class="nav-link-external">JOBS <span class="external-icon">↗</span></a>
+                <a href="staff.html" class="nav-link-external">STAFF <span class="external-icon">↗</span></a>
+                <a href="index.html#join">JOIN</a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-ip-display">
+                    <span class="nav-ip-text">play.lsrp.com</span>
+                    <button class="nav-copy-btn" id="navCopyBtn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <div class="logo">LSRP</div>
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <nav class="mobile-menu-nav">
+                <a href="index.html" class="mobile-menu-link">HOME</a>
+                <a href="index.html#server" class="mobile-menu-link">SERVER</a>
+                <a href="jobs.html" class="mobile-menu-link">JOBS <span class="external-icon">↗</span></a>
+                <a href="staff.html" class="mobile-menu-link">STAFF <span class="external-icon">↗</span></a>
+                <a href="index.html#join" class="mobile-menu-link">JOIN</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Ticker/Marquee -->
+    <div class="ticker-wrapper">
+        <div class="ticker-content">
+            <span class="ticker-text"></span>
+            <span class="ticker-text"></span>
+            <span class="ticker-text"></span>
+        </div>
+    </div>
+
+    <!-- Staff Hero -->
+    <section class="staff-hero">
+        <div class="staff-hero-content">
+            <div class="staff-label">MEET THE TEAM</div>
+            <h1 class="staff-title">SERVER MANAGEMENT</h1>
+            <p class="staff-description">
+                The dedicated team behind Los Santos Roleplay, working around the clock to ensure the best experience for our community.
+            </p>
+        </div>
+    </section>
+
+    <!-- Staff Members Section -->
+    <section class="staff-section">
+        <div class="staff-container">
+            <div class="staff-grid" id="staffGrid">
+                <!-- Staff members will be generated from config.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">LOS SANTOS RP</div>
+                <p class="footer-text">The ultimate GTA V roleplay experience</p>
+            </div>
+            <div class="footer-center">
+                <a href="#">Discord</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2025 Los Santos Roleplay</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Staff page specific script
+        function applyStaffConfig() {
+            if (!CONFIG.staff || !CONFIG.staff.enabled) {
+                // Redirect to home if staff page is disabled
+                window.location.href = 'index.html';
+                return;
+            }
+
+            // Update page title
+            if (CONFIG.staff.title) {
+                document.title = CONFIG.staff.title + " - " + CONFIG.general.pageTitle;
+            }
+
+            // Update hero section
+            const staffLabel = document.querySelector('.staff-label');
+            const staffTitle = document.querySelector('.staff-title');
+            const staffDescription = document.querySelector('.staff-description');
+
+            if (staffLabel && CONFIG.staff.subtitle) {
+                staffLabel.textContent = CONFIG.staff.subtitle;
+            }
+            if (staffTitle && CONFIG.staff.title) {
+                staffTitle.textContent = CONFIG.staff.title;
+            }
+            if (staffDescription && CONFIG.staff.description) {
+                staffDescription.textContent = CONFIG.staff.description;
+            }
+
+            // Generate staff cards
+            const staffGrid = document.getElementById('staffGrid');
+            if (staffGrid && CONFIG.staff.members && CONFIG.staff.members.length > 0) {
+                staffGrid.innerHTML = '';
+                CONFIG.staff.members.forEach((member, index) => {
+                    const card = createStaffCard(member, index);
+                    staffGrid.appendChild(card);
+                });
+            }
+        }
+
+        function createStaffCard(member, index) {
+            const card = document.createElement('div');
+            card.className = 'staff-card';
+            if (member.isOwner) {
+                card.classList.add('staff-card-owner');
+            }
+
+            const rotation = (index % 3 - 1) * 0.5; // Alternating rotation
+
+            card.innerHTML = `
+                <div class="staff-card-image">
+                    <img src="${member.image}" alt="${member.name}" loading="lazy">
+                    ${member.isOwner ? '<div class="staff-owner-badge">SERVER OWNER</div>' : ''}
+                </div>
+                <div class="staff-card-content">
+                    <h3 class="staff-card-name">${member.name}</h3>
+                    <div class="staff-card-role">${member.role}</div>
+                </div>
+            `;
+
+            card.style.transform = `rotate(${rotation}deg)`;
+
+            return card;
+        }
+
+        // Apply config when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            applyConfig();
+            applyStaffConfig();
+        });
+    </script>
+</body>
+
+</html>
