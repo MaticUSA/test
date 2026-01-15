@@ -44,16 +44,16 @@ const CONFIG = {
     // ═══════════════════════════════════════════════════════════════════════════
     general: {
         // Website title (appears in browser tab)
-        pageTitle: "Los Santos Roleplay - GTA V RP Server",
+        pageTitle: "Lagoon RP - FiveM Server",
 
         // Logo text (top left corner) - Only used if logoImage is empty
-        logoText: "SIREARP",
+        logoText: "Lagoon RP",
 
         // Logo image URL - Leave empty "" to use text logo instead
-        logoImage: "https://logos-world.net/wp-content/uploads/2023/08/X-Logo.png",
+        logoImage: "",
 
         // Server IP address
-        serverIp: "play.sirea.com",
+        serverIp: "To Be Announced",
 
         // Message shown when IP is copied
         copyIpMessage: "Server IP Copied!"
@@ -64,7 +64,7 @@ const CONFIG = {
     // ═══════════════════════════════════════════════════════════════════════════
     ticker: {
         enabled: true, // Set to false to hide ticker
-        text: "WELCOME TO LOS SANTOS ROLEPLAY • NEW PLAYERS WELCOME • JOIN OUR DISCORD • SERVER ONLINE 24/7 • EXPERIENCE THE BEST ROLEPLAY", // Text that scrolls (will be repeated many times)
+        text: "WELCOME TO LAGOON ROLEPLAY • NEW PLAYERS WELCOME • JOIN OUR DISCORD • SERVER ONLINE 24/7 • EXPERIENCE THE BEST ROLEPLAY", // Text that scrolls (will be repeated many times)
         speed: 2.5 // Animation speed (lower = slower, very slow for easy reading)
     },
 
@@ -85,8 +85,8 @@ const CONFIG = {
     // HERO SECTION (Top of homepage)
     // ═══════════════════════════════════════════════════════════════════════════
     hero: {
-        label: "WELCOME TO SERVER",
-        title: "SIREA ROLEPLAY",
+        label: "WELCOME TO",
+        title: "LAGOON ROLEPLAY",
         description: "Experience the most immersive roleplay server in GTA V. Create your story, build your legacy, and live the life you choose in the streets of Los Santos.",
 
         // Buttons
@@ -98,8 +98,8 @@ const CONFIG = {
         // Feature boxes (3 items)
         features: [
             { label: "INTELLIGENCE", value: "Advanced Systems" },
-            { label: "COMMUNITY", value: "Active Players" },
-            { label: "REALISM", value: "Authentic Experience" }
+            { label: "REALISM", value: "Authentic Experience" },
+            { label: "FREE", value: "No Pay-To-Win" }
         ],
 
         // Character image URL
@@ -132,22 +132,17 @@ const CONFIG = {
             {
                 name: "DISCORD",
                 buttonText: "Join",
-                link: "https://discord.gg/yourserver"
+                link: "https://discord.gg/Kuz9G7zj4y"
             },
             {
                 name: "TIKTOK",
                 buttonText: "Follow",
-                link: "https://tiktok.com/@yourserver"
-            },
-            {
-                name: "INSTAGRAM",
-                buttonText: "Follow",
-                link: "https://instagram.com/yourserver"
+                link: "https://tiktok.com/"
             },
             {
                 name: "YOUTUBE",
                 buttonText: "Subscribe",
-                link: "https://youtube.com/@yourserver"
+                link: "https://youtube.com/"
             }
         ]
     },
@@ -175,8 +170,8 @@ const CONFIG = {
     // ═══════════════════════════════════════════════════════════════════════════
     about: {
         label: "WELCOME TO",
-        title: "LOS SANTOS ROLEPLAY",
-        paragraph1: "Los Santos Roleplay is a premium GTA V roleplay server offering an authentic and immersive experience. Our server features advanced systems, custom scripts, and a dedicated community of roleplayers committed to creating realistic stories and memorable moments.",
+        title: "LAGOON ROLEPLAY",
+        paragraph1: "Lagoon Roleplay is a premium GTA V roleplay server offering an authentic and immersive experience. Our server features advanced systems, custom scripts, and a dedicated community of roleplayers committed to creating realistic stories and memorable moments.",
         paragraph2: "Join thousands of players in a fully immersive roleplay environment where every decision matters. From starting as a civilian to becoming a successful business owner, police officer, or criminal mastermind - your story is yours to write.",
 
         stats: [
@@ -190,7 +185,7 @@ const CONFIG = {
             "Zero lag experience with optimized performance",
             "Active development with weekly updates",
             "Professional staff available 24/7",
-            "Fair economy and balanced gameplay",
+            "Fair economy and balanced gameplay - NO PAY-TO-WIN!",
             "Dedicated community and events"
         ]
     },
@@ -209,18 +204,18 @@ const CONFIG = {
             },
             {
                 number: "2",
-                title: "Submit Application",
-                description: "Fill out our application form with your character backstory. Staff will review within 24 hours."
+                title: "Download Resources",
+                description: "Download FiveM and required mods from our Discord server."
             },
             {
                 number: "3",
-                title: "Download Resources",
-                description: "Download FiveM, server files, and required mods from our Discord server."
+                title: "Join Server",
+                description: "After completing the 1st and 2nd steps, Join the Lagoon RP FiveM Server from the Server Status Tab on Discord!"
             },
             {
                 number: "4",
                 title: "Start Playing",
-                description: "Connect using our IP address and start your journey in Los Santos. Welcome!"
+                description: "When finished connecting to the FiveM Server please create YOUR character and live out your wildest dreams!"
             }
         ]
     },
@@ -238,11 +233,11 @@ const CONFIG = {
         },
 
         list: [
-            { title: "Job System", description: "Diverse job opportunities from police to business owner." },
-            { title: "Housing", description: "Buy and customize properties in Los Santos." },
+            { title: "Job System", description: "Diverse job opportunities from Police, EMS, Business Owner, ETC.." },
+            { title: "Housing", description: "Buy and customize properties in Los Santos. Make it YOUR home!" },
             { title: "Legal System", description: "Realistic courts, lawyers, and justice system." },
-            { title: "Economy", description: "Balanced economic systems and businesses." },
-            { title: "Criminal Activity", description: "Realistic crime systems and organizations." }
+            { title: "Economy", description: "Balanced economic systems and businesses. Will you be on top of the city?" },
+            { title: "Criminal Activity", description: "Realistic crime systems, organizations, many things to do." }
         ]
     },
 
@@ -335,13 +330,13 @@ const CONFIG = {
     // FOOTER
     // ═══════════════════════════════════════════════════════════════════════════
     footer: {
-        logo: "LOS SANTOS RP",
+        logo: "Lagoon RP",
         text: "The ultimate GTA V roleplay experience",
-        copyright: "© 2025 Los Santos Roleplay",
+        copyright: "© 2026 Lagoon RP",
         links: [
-            { text: "Discord", url: "https://discord.gg/yourserver" },
-            { text: "X", url: "https://x.com/yourserver" },
-            { text: "Instagram", url: "https://instagram.com/yourserver" }
+            { text: "Discord", url: "https://discord.gg/Kuz9G7zj4y" },
+            { text: "X", url: "https://x.com/" },
+            { text: "Instagram", url: "https://instagram.com/" }
         ]
     },
 
@@ -367,28 +362,28 @@ const CONFIG = {
                 {
                     title: "POLICE OFFICER",
                     salary: "$2,500 - $5,000/hr",
-                    description: "Protect and serve the citizens of Los Santos. Patrol the streets, respond to emergencies, and maintain law and order.",
+                    description: "Step into the role of a sworn law enforcement officer and dedicate yourself to protecting the citizens of Los Santos. Patrol the city’s streets, highways, and neighborhoods while responding to high-priority calls, ongoing crimes, and emergency situations. As an officer, you’ll work alongside fellow members of the department to enforce the law, de-escalate conflicts, investigate criminal activity, and uphold justice with integrity and professionalism. Every decision you make shapes the safety of the city and the stories that unfold within it. Whether you’re conducting routine traffic stops or responding to major incidents, your presence plays a vital role in maintaining order and protecting the community.",
                     image: "https://i.redd.it/human-police-officers-v0-2u5ptlmx94pe1.jpg?width=1012&format=pjpg&auto=webp&s=8a04c56b5827c70352e6ce4b0f3f0943e5121acd",
                     tags: ["Level 10+", "Clean Record", "Medium Diff", "15-30 Active"]
                 },
                 {
                     title: "PARAMEDIC",
                     salary: "$2,000 - $4,500/hr",
-                    description: "Save lives across the city. Respond to medical emergencies and provide critical care to injured citizens.",
+                    description: "Answer the call when lives are on the line and serve as a vital lifeline for the citizens of Los Santos. As a paramedic, you’ll respond to medical emergencies across the city, providing critical care, stabilizing patients, and making life-saving decisions under pressure. From traffic collisions and workplace injuries to medical crises and large-scale incidents, your role demands quick thinking, compassion, and professionalism. Working closely with law enforcement, you’ll transport patients safely, manage emergency scenes, and ensure every individual receives the care they deserve. Every shift brings new challenges, meaningful roleplay, and opportunities to make a real impact—because in Los Santos, seconds matter, and lives depend on you.",
                     image: "https://placehold.co/600x400/1a1a1a/ffffff?text=EMS",
                     tags: ["Level 5+", "Medical Training", "Medium Diff", "10-20 Active"]
                 },
                 {
                     title: "TAXI DRIVER",
                     salary: "$1,500 - $3,000/hr",
-                    description: "Transport passengers around Los Santos. Meet new people and earn tips while exploring the city.",
+                    description: "Keep Los Santos moving by stepping into the role of a professional taxi driver. Provide safe, reliable transportation for citizens, tourists, and visitors as you navigate the city’s bustling streets, highways, and nightlife. As a taxi driver, you’ll interact with a wide range of characters, create organic roleplay opportunities, and build a reputation through excellent service and professionalism. Whether you’re transporting passengers to their next job, helping newcomers find their way, or responding to on-demand ride requests, every fare tells a story. Your vehicle is more than transportation—it’s a mobile hub for conversation, connections, and city life. In a city that never sleeps, you play a key role in keeping it alive.",
                     image: "https://placehold.co/600x400/1a1a1a/ffffff?text=TAXI",
                     tags: ["Level 1+", "Driver's License", "Easy Diff", "5-15 Active"]
                 },
                 {
                     title: "MECHANIC",
                     salary: "$1,800 - $4,000/hr",
-                    description: "Repair and customize vehicles. Run your own garage or work for established shops.",
+                    description: "Become the backbone of Los Santos’ automotive world by stepping into the role of a skilled mechanic. Diagnose, repair, and customize vehicles for citizens, businesses, and emergency services while keeping the city’s wheels turning. From roadside assistance and engine repairs to full performance upgrades and custom builds, your expertise keeps vehicles safe, reliable, and street-ready. As a mechanic, you’ll interact with a wide range of characters, negotiate services, and create meaningful roleplay through customer interactions and shop operations. Whether you’re running a busy garage or responding to urgent breakdowns, your work directly impacts daily life across the city. In Los Santos, every vehicle has a story—and you’re the one who keeps it running.",
                     image: "https://placehold.co/600x400/1a1a1a/ffffff?text=MECH",
                     tags: ["Level 3+", "Mech Skills", "Easy Diff", "8-18 Active"]
                 }
@@ -492,41 +487,18 @@ const CONFIG = {
         // Staff members - Easy to add/remove
         members: [
             {
-                name: "Sirea",
+                name: "Bubbles",
                 role: "Server Owner",
                 image: "https://i.pinimg.com/736x/63/e6/7c/63e67c6f0eeb94087faafb857f8bcc4d.jpg",
                 isOwner: true // Special badge for owner
             },
             {
-                name: "Sirea DEV",
-                role: "Head Admin",
+                name: "Matic",
+                role: "Server Owner",
                 image: "https://i.pinimg.com/736x/99/87/c9/9987c98624fa3d9bcd1178b6d66cf86f.jpg",
-                isOwner: false
+                isOwner: true
             },
-            {
-                name: "Mike ",
-                role: "Senior Admin",
-                image: "https://i.pinimg.com/736x/68/6c/3f/686c3f51f78a2611e307da692a14adc2.jpg",
-                isOwner: false
-            },
-            {
-                name: "Sarah",
-                role: "Community Manager",
-                image: "https://i.pinimg.com/736x/8f/5c/80/8f5c80deff95be59419eeb887296e323.jpg",
-                isOwner: false
-            },
-            {
-                name: "Alex",
-                role: "Developer",
-                image: "https://i.pinimg.com/1200x/3c/5a/08/3c5a084280e215681fa0862644864f89.jpg",
-                isOwner: false
-            },
-            {
-                name: "Emma",
-                role: "Moderator",
-                image: "https://i.pinimg.com/736x/4a/fc/da/4afcdabbf3e620b3a2887fb30135982a.jpg",
-                isOwner: false
-            }
         ]
     }
 };
+
